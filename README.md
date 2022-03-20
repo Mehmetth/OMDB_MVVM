@@ -19,7 +19,7 @@ This application is written using the OMDB API. The application, MVVM, Coroutine
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Libraries used in the application.
 
 * [Coroutines](https://developer.android.com/kotlin/coroutines)
 * [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
