@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OmdbApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="displayTitle">Find Movies, Tv series, and more..</string>
+    <string name="displayHint">Sherlock Holmes</string>
+    <string name="displayMovies">Movies</string>
+    <string name="displaySeries">Series</string>
+    <string name="displayFirstSearch">*game*</string>
+
+    <string name="detailLoading">Loading..</string>
+</resources>

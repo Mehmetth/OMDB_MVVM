@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.detail.DetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:elevation="10dp"/>
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/item_image"
+            android:text="@string/detailLoading"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="25sp"
+            android:layout_margin="20dp"/>
+
+        <ImageView
+            android:id="@+id/item_time_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_access_time_24"
+            app:layout_constraintTop_toBottomOf="@+id/item_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/item_name"
+            app:layout_constraintStart_toEndOf="@+id/item_time_image"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/detailLoading"
+            android:textColor="@color/hint_color"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/item_star_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_star_24"
+            app:layout_constraintTop_toBottomOf="@+id/item_name"
+            app:layout_constraintStart_toEndOf="@+id/item_time"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="55dp"/>
+
+        <TextView
+            android:id="@+id/item_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/item_name"
+            app:layout_constraintStart_toEndOf="@+id/item_star_image"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/detailLoading"
+            android:textColor="@color/hint_color"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="15sp"/>
+
+        <View
+            android:id="@+id/item_minute_rate_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hint_color"
+            app:layout_constraintTop_toBottomOf="@+id/item_star"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:alpha="0.3"/>
+
+        <TextView
+            android:id="@+id/item_released_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/item_minute_rate_view"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Release date"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="19sp"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/item_released"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/item_released_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/detailLoading"
+            android:textColor="@color/hint_color"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/item_genre_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/item_minute_rate_view"
+            app:layout_constraintStart_toEndOf="@+id/item_released_title"
+            android:text="Genre"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="19sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="55dp"/>
+
+        <TextView
+            android:id="@+id/item_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/item_genre_title"
+            app:layout_constraintStart_toEndOf="@+id/item_released_title"
+            android:text="@string/detailLoading"
+            android:textColor="@color/hint_color"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="55dp"/>
+
+        <View
+            android:id="@+id/item_released_genre_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hint_color"
+            app:layout_constraintTop_toBottomOf="@+id/item_genre"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:alpha="0.3"/>
+
+        <TextView
+            android:id="@+id/item_synopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/item_released_genre_view"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Synopsis"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="19sp"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:id="@+id/item_plot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/item_synopsis"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/hint_color"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="15sp"
+            android:maxLines="9"
+            android:gravity="top"
+            android:scrollbars="vertical"
+            android:text="@string/detailLoading"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
