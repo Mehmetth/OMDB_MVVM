@@ -1,70 +1,41 @@
 <!-- ABOUT THE PROJECT -->
 ## OMDB_MVVM
-![alt text](https://drive.google.com/file/d/1CyDnXreZlJo1DZdgtJ4S8q2s9loJPdLG/view?usp=sharing)
-[![Product Name Screen Shot][product-screenshot]](https://drive.google.com/file/d/1CyDnXreZlJo1DZdgtJ4S8q2s9loJPdLG/view?usp=sharing)
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/18207490/159183665-378c141d-c92d-4829-97cb-811eb0df5bd0.png" height="350">
+  <img src="https://user-images.githubusercontent.com/18207490/159183670-f04081cd-7bb0-4a72-b5da-3ab11de0ddfa.png" height="350">
+  <img src="https://user-images.githubusercontent.com/18207490/159183675-5171f7d6-53a7-4ea8-82f9-5be1b8a138ab.png" height="350">
+  <img src="https://user-images.githubusercontent.com/18207490/159183678-3bfb6b59-8a95-49eb-91dd-50d0fe4bc19c.png" height="350">
+  <img src="https://user-images.githubusercontent.com/18207490/159183681-b7d12199-9148-4fbb-91fd-7f8c97a0f669.png" height="350">
+</p>
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This application is written using the OMDB API. The application, MVVM, Coroutines, Hilt, Navigation component features were used.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+ * Architecture is written in MVVM. 
+ * Help was obtained with data transfer with SharedViewModel. 
+ * Asynchronous transactions were made with Coroutines. 
+ * StateFlow was used to control the values returned in the Retrofit and to perform operations according to the returned values.
+ * Picasso is used to display the pictures.
+ * Hilt is used for Dependency Injection.
 
 ### Built With
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+* [Coroutines](https://developer.android.com/kotlin/coroutines)
+* [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
+* [Navigation component](https://developer.android.com/guide/navigation/navigation-getting-started)
+* [SharedViewModel](https://developer.android.com/codelabs/basic-android-kotlin-training-shared-viewmodel#1)
+* [Retrofit](https://square.github.io/retrofit/)
+* [StateFlow](https://developer.android.com/kotlin/flow/stateflow-and-sharedflow)
+* [Picasso](https://square.github.io/picasso/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
+1. Get a free API Key at [https://www.omdbapi.com](https://www.omdbapi.com/apikey.aspx)
+2. Enter your API in `build.gradle`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   buildConfigField 'String', 'API_KEY', '"ENTER_YOUR_OMDB_API_HERE"'
    ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
